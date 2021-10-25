@@ -1,0 +1,1 @@
+The truth about Technical Analysis. 

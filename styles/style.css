@@ -1,86 +1,122 @@
 html,body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: 'BrandonGrotesque-Light', sans-serif;
     margin: 0;
     height: 100%;
+    /* width: 100%; */
     /* overflow: hidden; */
 }
+
+/*********************MAIN-CONTAINER SECTION**************************/
 
 .main-container {
     display: flex;
     flex-direction: column;
-    /* flex-wrap: nowrap; */
     height: 100%;
+    /* width: auto; */
     overflow: auto;
 }
 
+/*********************HEADER/HERO SECTION**************************/
 
 .section-top {
     display: flex;
     flex-direction: column;
     flex: 1;
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
-
 
 .header {  
     display: flex;
-    justify-content: space-evenly;
-    /* align-items: flex-start; */
-    padding: 25px 20px;
-
-    flex: 1;
-}
-
-.hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    /* align-items: flex-start; */
+    padding: 25px 25px;
     flex: 1;
-    padding: 25px 0;
-}
-
-#stonk-image {
-    width: 400px;
-    height: 300px;
+    /* position: fixed; */
+    width: auto;
 }
 
 .logo-text {
-    color: white;
-}
-
-h1 {
-    margin: 0;
-    color: white;
-}
-
-#hero-main-text {
-    font-size: 48px;
-    font-weight: bolder;
-}
-
-#hero-header {
-    border: 3px solid blue;
+    color: black;
+    font-size: 28px;
+    font-weight: 200;
 }
 
 ul {
     margin: 0;
     padding: 0;
     display: flex;
-
-    
-    gap: 20px;
-    border: 2px solid orange;
+    gap: 12px;
+    /* border: 2px solid orange; */
 }
 
 li {
-
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     list-style-type: none;
-    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: 200;
+    opacity: .8;
+}
+
+.hero {
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    align-items: center;
+    flex: 1;
+    padding: 25px 0;
+
+    display: flex;
 }
 
 
+
+
+.hero-text-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 0;
+    /* color: white; */
+    color: black;
+    font-weight: 200;
+    font-size: 36px;
+    /* letter-spacing: .03em; */
+}
+
+.stonk-image-wrapper {
+    /* width: 500px;
+    height: 400px; */
+    flex: 1;
+    max-width: 35%;
+    height: auto;
+    /* flex: 1 2 auto; */
+    margin: 60px 60px;
+    
+}
+
+
+
+#hero-main-text {
+    font-weight: 200;
+    font-size: 40px;
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    /* letter-spacing: .03em; */
+    flex: 1;
+    
+}
+
+/*********************MAIN SECTION**************************/
 
 .content {
     flex: 1;
@@ -89,51 +125,111 @@ li {
     /* align-items: center; */
 }
 
+#main-text-header {
 
+}
 
 #main-content {
-    border: 3px solid green;
-    height: 500px;
+    /* border: 3px solid green; */
+    height: 700px;
     background-color: black;
-}
 
-#quote-content {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
-    border: 3px solid orangered;
-    height: 400px;
-    background-color: #c79cdf;
-    opacity: .4;
+    justify-content: space-evenly;
+
 }
 
-#quote-content p {
-    width: 400px;
-    font-size: larger;
+.main-content-bottom {
+    display: flex;
+    gap: 25px;
+    /* justify-content: center; */
 }
 
-#sign-up {
-    border: 3px solid palevioletred;
-    height: 250px;
-    background-color: black;
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-
-#pain-image {
-    width: 400px;
-    height: 300px;
+.item p {
+    /* font-size: 24px; */
+    color: white;
 }
+
 .image {
     width: 200px;
 }
 
+/*********************QUOTE SECTION**************************/
 
+#quote-content {
+    display: flex;
+    /* justify-content: space-evenly; */
+    /* border: 3px solid orangered; */
+    height: 600px;
+    background-color: #9a79ac;
+    /* opacity: .8; */
+}
+
+.quote-wrapper {
+    flex: 1;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-image-wrapper {
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+#pain-image {
+    /* height: 400px;
+    width: 450px; */
+    max-width: 85%; /*of its parent (image-wrapper)*/
+    height: auto;
+    opacity: .8;
+    /* margin: 50px; */
+}
+
+#quote {
+    font-family: 'BrandonGrotesque-Light', sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    /* line-height: 36px; */
+    font-weight: 200;
+    max-width: 85%;
+    height: auto;
+    margin: 50px;
+}
+
+/*********************SIGN UP SECTION**************************/
+
+#sign-up {
+    /* border: 3px solid palevioletred; */
+    height: 500px;
+    background-color: black;
+}
+
+#sign-up-text {
+    color: white;
+}
+
+/*********************FOOTER SECTION**************************/
 
 .footer {
-    border: 3px solid yellow;
+    /* border: 3px solid yellow; */
 }
 
 .bgcolor {
-    background-color: #47026d;
+    /* background-color: #47026d; */
+    background-color: #9a79ac;
+    /* opacity: .6; */
 }
 
