@@ -108,16 +108,10 @@ a {
     margin: 0;
 }
 
-.btn {
-	background-color: black;
-	width: 25%;
+.btn-hero {
+    width: 25%;
 	height: 40px;
-	border-radius: 15px;
-	color: white;
-	opacity: 0.7;
-    border: none;
 }
-
 
 .stonk-image-wrapper {
 	/* 	border: 3px solid green; */
@@ -150,13 +144,13 @@ a {
 }
 
 #main-text-header {
-	color: whitesmoke;
+	color: black;
 	margin: 0;
 	font-weight: 100;
 	font-size: 40px;
 }
 #scroll-alert {
-	color: whitesmoke;
+	color: black;
 	margin: 0;
 	font-weight: 100;
 	font-size: 14px;
@@ -167,7 +161,7 @@ a {
 #main-content {
 	/* border: 3px solid green; */
 	height: 600px;
-	background-color: black;
+	background-color: white;
 
 	display: flex;
 	flex-direction: column;
@@ -193,7 +187,7 @@ a {
 
 .item p {
 	/* font-size: 24px; */
-	color: white;
+	color: black;
 	margin: 0;
 	padding: 0;
     font-size: 18px;
@@ -244,27 +238,78 @@ a {
 /*********************SIGN UP SECTION**************************/
 
 #sign-up-wrapper {
-	/* border: 3px solid palevioletred; */
-	height: 500px;
-	background-color: black;
+	/* border: 5px solid rgb(209, 64, 112); */
+	height: 600px;
+	background-color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 25px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 50px;
 }
 
 .sign-up-box-wrapper {
+    /* border: 5px solid rgb(67, 255, 255); */
+    display: flex;
     background-color: #36134b;
     width: 100%;
     height: auto;
-    padding: 100px;
+    /* padding: 100px; */
     border: none;
     border-radius: 20px;
-    opacity: .8;
+    /* margin: 0 25px; */
+    /* opacity: .8; */
 }
 
-#sign-up-para {
+.sign-up-text-wrapper {
+    /* border: 3px solid orange; */
+    /* flex: 1; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    gap: 25px;
+}
+
+
+
+#sign-up-header-text {
+    font-size: 40px;
+    font-weight: 300;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#sign-up-para-text {
 	color: white;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+}
+
+.sign-up-btn-wrapper {
+    /* flex: 1; */
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid white; */
+}
+
+.sign-up-btn2 {
+    /* margin-top: 25px; */
+    /* border: 3px solid lightgreen; */
+    width: 50%;
+    /* height: auto; */
+    text-align: center;
+    /* padding: 10px; */
+    /* height: 40px; */
+    height: auto;
+    padding: 15px;
+    /* padding: 1px 6px; */
 }
 
 /*********************FOOTER SECTION**************************/
@@ -278,6 +323,20 @@ a {
 	background-color: #36134b;
 	/* opacity: .6; */
 }
+
+
+
+
+/*******************SHARED CLASSES********************/
+
+.btn {
+	background-color: black;
+	border-radius: 15px;
+	color: white;
+	opacity: 0.7;
+    border: none;
+}
+
 	
 	
 	
@@ -356,3 +415,62 @@ a {
 		padding: 25px;
 	}
 }
+
+@media only screen and (max-width: 600px) {
+	#sign-up-wrapper {
+        /* border: 5px solid rgb(209, 64, 112); */
+        /* height: 600px; */
+        /* background-color: white;
+        display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        padding: 25px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+	.sign-up-box-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		/* justify-content: center; */
+		/* padding: 25px; */
+	}
+}
+
+@media only screen and (max-width: 600px) {
+    .sign-up-text-wrapper {
+        /* border: 3px solid orange; */
+        flex: 1;
+        /* width: 100%;
+        height: auto; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 25px;
+        padding: 15px;
+    }    
+}
+
+@media only screen and (max-width: 600px) {
+    #sign-up-header-text {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .sign-up-btn-wrapper {
+        flex: 1;
+        /* width: 100%;
+        height: 100%; */
+        display: flex;
+        padding: 15px;
+        /* justify-content: center;
+        align-items: center; */
+        border: 3px solid white;
+    }
+}
+
+
